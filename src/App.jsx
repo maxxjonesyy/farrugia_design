@@ -1,7 +1,13 @@
 import "./styles/sass/app.scss";
 
+import Navbar from "./components/Navbar";
+
 function App() {
-  return <div></div>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
 
 export default App;
