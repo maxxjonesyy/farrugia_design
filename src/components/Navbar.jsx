@@ -3,7 +3,7 @@ import "../styles/sass/navbar.scss";
 function Navbar() {
   function toggleHamburger() {
     const hamburger = document.querySelector(".hamburger");
-    const menu = document.querySelector(".nav__list");
+    const menu = document.querySelector(".nav__menu");
 
     hamburger.classList.toggle("active");
     menu.classList.toggle("active");
@@ -16,13 +16,7 @@ function Navbar() {
           <img src='../src/images/logo.png' alt='logo' />
         </div>
 
-        <div className='hamburger' onClick={toggleHamburger}>
-          <span className='bar'></span>
-          <span className='bar'></span>
-          <span className='bar'></span>
-        </div>
-
-        <ul className='nav__list'>
+        <ul className='nav__menu'>
           <li className='nav__item'>
             <a className='nav__link' href=''>
               Portfolio
@@ -44,6 +38,12 @@ function Navbar() {
             </a>
           </li>
         </ul>
+
+        <div className='hamburger' onClick={toggleHamburger}>
+          <span className='bar'></span>
+          <span className='bar'></span>
+          <span className='bar'></span>
+        </div>
       </nav>
     </header>
   );

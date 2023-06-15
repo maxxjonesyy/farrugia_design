@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&display=swap");
 
 :root {
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 
   --light-grey: #424242;
@@ -13,6 +12,20 @@
   --font-size-xl: clamp(1.73rem, 0.92vw + 1.5rem, 2.07rem);
   --font-size-xxl: clamp(2.07rem, 1.11vw + 1.8rem, 2.49rem);
   --font-size-xxxl: clamp(2.49rem, 1.33vw + 2.16rem, 2.99rem);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: calc(100% - 1em);
 }
 
 li,
