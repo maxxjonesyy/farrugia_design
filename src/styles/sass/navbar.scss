@@ -9,6 +9,7 @@
 
 .nav__image {
   max-width: 70%;
+  padding: 0.5rem;
 }
 
 .nav__menu {
@@ -46,7 +47,7 @@
 
 @media (max-width: 768px) {
   .nav__menu {
-    position: fixed;
+    position: absolute;
     justify-content: center;
     left: -100%;
     top: 23%;
