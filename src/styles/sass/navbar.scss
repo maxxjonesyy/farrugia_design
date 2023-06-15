@@ -17,6 +17,7 @@
   gap: 1.5rem;
   padding: 1rem;
   transform: translateY(-7px);
+  z-index: 1;
 }
 
 .nav__link {
@@ -50,13 +51,15 @@
     position: absolute;
     justify-content: center;
     left: -100%;
-    top: 23%;
+    padding: 2rem;
+    top: 21%;
     --webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
 
   .nav__menu.active {
     left: 0;
+
     width: 100%;
     background-color: black;
   }
