@@ -7,9 +7,7 @@
 .slide__container {
   display: flex;
   height: 100%;
-  max-width: 70rem;
   overflow: hidden;
-  margin: auto;
   border-radius: 8px;
 }
 
@@ -23,13 +21,12 @@
   width: 100%;
   opacity: 0.8;
   object-fit: cover;
-  box-shadow: 0px 0px 100px -45px rgba(0, 0, 0, 0.2);
   --webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .slide__byline {
-  padding: 2rem;
+  padding: 2rem 1rem 2rem 1rem;
   text-align: center;
   font-size: var(--font-size-sm);
   color: var(--light-grey);
@@ -49,6 +46,7 @@
 
   .slide__img {
     padding: 1rem;
+    border-radius: 20px;
     align-items: center;
   }
 }

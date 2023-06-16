@@ -24,10 +24,10 @@ function Home() {
     } else if (counter === imagesLength) {
       counter = 0;
     }
-  }, 5000);
+  }, 6000);
 
   return (
-    <div id='home'>
+    <div id='home' className='wrapper'>
       <Navbar />
 
       <div className='slide__container'>
