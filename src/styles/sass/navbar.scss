@@ -8,6 +8,7 @@
 .nav__image {
   max-width: 70%;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 .nav__menu {
@@ -24,7 +25,7 @@
 }
 
 .nav__link:hover {
-  color: rgb(167, 148, 46);
+  color: var(--light-gold);
 }
 
 .hamburger {
@@ -57,7 +58,6 @@
 
   .nav__menu.active {
     left: 0;
-
     width: 100%;
     background-color: black;
   }
