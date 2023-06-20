@@ -1,5 +1,7 @@
 import "../styles/sass/navbar.scss";
 
+import { Link } from "react-router-dom";
+
 function Navbar() {
   function toggleHamburger() {
     const hamburger = document.querySelector(".hamburger");
@@ -13,29 +15,31 @@ function Navbar() {
     <header id='header'>
       <nav id='nav'>
         <div className='nav__image'>
-          <img src='../src/images/logo.png' alt='logo' />
+          <Link to='/'>
+            <img src='../src/images/logo.png' alt='logo' />
+          </Link>
         </div>
 
         <ul className='nav__menu'>
           <li className='nav__item'>
-            <a className='nav__link' href=''>
+            <Link className='nav__link' to='/portfolio'>
               Portfolio
-            </a>
+            </Link>
           </li>
           <li className='nav__item'>
-            <a className='nav__link' href=''>
+            <Link className='nav__link' to='/about'>
               About
-            </a>
+            </Link>
           </li>
           <li className='nav__item'>
-            <a className='nav__link' href=''>
+            <Link className='nav__link' to='/news'>
               News
-            </a>
+            </Link>
           </li>
           <li className='nav__item'>
-            <a className='nav__link' href=''>
+            <Link className='nav__link' to='/contact'>
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
 
