@@ -1,0 +1,18 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio__byline {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 7rem;
+  color: var(--light-gold);
+  font-size: var(--font-size-base);
+}
+
+@media (max-width: 768px) {
+  .portfolio__byline {
+    padding-bottom: 3rem;
+  }
+}
