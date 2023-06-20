@@ -27,7 +27,7 @@ function Home() {
   }, 6000);
 
   return (
-    <div id='home' className='wrapper'>
+    <div id='home'>
       <Navbar />
 
       <div className='slide__container'>
