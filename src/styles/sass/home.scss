@@ -1,7 +1,7 @@
 #home {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100dvh;
 }
 
 .slide__container {
@@ -46,7 +46,7 @@
 
   .slide__img {
     padding: 1rem;
-    border-radius: 20px;
+    border-radius: 25px;
     align-items: center;
   }
 }

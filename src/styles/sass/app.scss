@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  height: calc(100% - 1em);
+  min-height: 100dvh;
 }
 
 li,
