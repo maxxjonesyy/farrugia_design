@@ -6,4 +6,5 @@ Interior Design website for a client built using React.js. One thing I would lik
 
 HTML, SASS, Javascript, React, Material UI, React Router DOM, FormSubmit.
 
-![farrugia design](https://github.com/maxxjonesyy/farrugia_design/assets/73814371/a952824c-4173-4fd7-91ec-320e29a19018)
+![farrugisdesign](https://github.com/maxxjonesyy/farrugia_design/assets/73814371/9cacaedb-5bae-48b6-987d-8c13ef2537cd)
+
