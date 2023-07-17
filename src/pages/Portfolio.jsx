@@ -15,6 +15,7 @@ function Portfolio() {
           location='pb'
           title='Iluka, Palm Beach'
         />
+
         <Project path='OYSTER BAY' location='ob' title='Oyster Bay' />
       </div>
 

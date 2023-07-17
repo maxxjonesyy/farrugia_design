@@ -40,7 +40,7 @@ function About() {
         <div className='portrait'>
           <img
             className='portrait__image'
-            src='./src/images/portrait.jpg'
+            src='/images/portrait.jpg'
             alt='portrait'
           />
           <p className='portrait__title'>Founder / Designer</p>
@@ -71,7 +71,7 @@ function About() {
                   onClick={handleZoom}
                   className='awards__image'
                   data-action='zoom'
-                  src='./src/images/AWARDS/magazine1.jpg'
+                  src='/images/AWARDS/magazine1.jpg'
                   alt='magazine feature 1'
                 />
               </div>
@@ -79,7 +79,7 @@ function About() {
                 <img
                   onClick={handleZoom}
                   className='awards__image'
-                  src='./src/images/AWARDS/mbanswlogo2.png'
+                  src='/images/AWARDS/mbanswlogo2.png'
                   alt='master builders association award'
                 />
               </div>
@@ -87,7 +87,7 @@ function About() {
                 <img
                   onClick={handleZoom}
                   className='awards__image'
-                  src='./src/images/AWARDS/magazine2.jpg'
+                  src='/images/AWARDS/magazine2.jpg'
                   alt='magazine feature 2'
                 />
               </div>

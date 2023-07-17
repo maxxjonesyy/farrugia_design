@@ -16,7 +16,7 @@ function Navbar() {
       <nav id='nav'>
         <div className='nav__image'>
           <Link to='/'>
-            <img src='../src/images/logo.png' alt='logo' />
+            <img src='/images/logo.png' alt='logo' />
           </Link>
         </div>
 
