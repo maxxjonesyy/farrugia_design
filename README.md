@@ -12,6 +12,7 @@ Interior Design website for a client, one thing I would like a workaround for is
 * FormSubmit
 
 ## Screenshots
-<img src="https://github.com/maxxjonesyy/farrugia_design/assets/73814371/9cacaedb-5bae-48b6-987d-8c13ef2537cd" width="750">
+<img src="https://github.com/maxxjonesyy/farrugia_design/assets/73814371/55ce11fb-a9a6-4818-9e85-4768fdb15439">
+
 
 
