@@ -8,7 +8,7 @@ function Home() {
   let counter = 0;
 
   for (let i = 1; i < imagesLength + 1; i++) {
-    images.push(`/images/HOMESLIDESHOW/slide${i}.jpg`);
+    images.push(`/images/HOMESLIDESHOW/slide${i}.webp`);
   }
 
   function sliderAnimation(counter) {

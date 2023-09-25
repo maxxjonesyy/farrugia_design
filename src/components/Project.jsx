@@ -5,7 +5,7 @@ function Project({ path, location, title }) {
   const imagesLength = 8;
 
   for (let i = 1; i < imagesLength + 1; i++) {
-    images.push(`/images/${path}/${location}${[i]}.jpg`);
+    images.push(`/images/${path}/${location}${[i]}.webp`);
   }
 
   return (
