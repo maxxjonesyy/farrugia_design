@@ -33,8 +33,7 @@ function Contact() {
         <input type='email' name='email' placeholder='Email' required />
         <textarea
           name='message'
-          cols='30'
-          rows='10'
+          rows='5'
           placeholder='Message...'
           required></textarea>
         <button className='submit' type='submit'>
