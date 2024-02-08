@@ -1,25 +1,15 @@
 import "./styles/sass/app.scss";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Home from "./views/Home";
-import Portfolio from "./views/Portfolio";
-import About from "./views/About";
-import News from "./views/News";
-import Contact from "./views/Contact";
+import { BrowserRouter } from "react-router-dom";
+import { motion } from "framer-motion";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
   return (
-    <div className='wrapper'>
+    <motion.div className='wrapper'>
       <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/portfolio' element={<Portfolio />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/news' element={<News />} />
-          <Route path='/contact' element={<Contact />} />
-        </Routes>
+        <AnimatedRoutes />
       </BrowserRouter>
-    </div>
+    </motion.div>
   );
 }
 

@@ -1,7 +1,8 @@
 import "../styles/sass/about.scss";
 
-import Navbar from "../components/Navbar";
 import { useState } from "react";
+import Navbar from "../components/Navbar";
+import { motion } from "framer-motion";
 
 function About() {
   const [info, setInfo] = useState("About");
@@ -33,7 +34,11 @@ function About() {
   });
 
   return (
-    <div id='about-page'>
+    <motion.div
+      id='about-page'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}>
       <Navbar />
 
       <div className='about'>
@@ -104,14 +109,13 @@ function About() {
               className='modal__close'
               onClick={() =>
                 (document.querySelector(".modal").style.display = "none")
-              }
-            >
+              }>
               x
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

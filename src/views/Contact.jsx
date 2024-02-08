@@ -1,16 +1,20 @@
 import Navbar from "../components/Navbar";
 import "../styles/sass/contact.scss";
+import { motion } from "framer-motion";
 
 function Contact() {
   return (
-    <div id='contact'>
+    <motion.div
+      id='contact'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}>
       <Navbar />
 
       <form
         className='form'
         action='https://formsubmit.co/maxxjonesyy@gmail.com'
-        method='POST'
-      >
+        method='POST'>
         <div className='info'>
           <div>
             <h2>Get in touch:</h2>
@@ -32,13 +36,12 @@ function Contact() {
           cols='30'
           rows='10'
           placeholder='Message...'
-          required
-        ></textarea>
+          required></textarea>
         <button className='submit' type='submit'>
           Submit
         </button>
       </form>
-    </div>
+    </motion.div>
   );
 }
 

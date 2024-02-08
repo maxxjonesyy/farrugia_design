@@ -1,13 +1,15 @@
 import "../styles/sass/home.scss";
 
 import Navbar from "../components/Navbar";
+import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 function Home() {
   const images = [];
-  const imagesLength = 6;
+  const maxSlides = 6;
   let counter = 0;
 
-  for (let i = 1; i < imagesLength + 1; i++) {
+  for (let i = 1; i < maxSlides + 1; i++) {
     images.push(`/images/HOMESLIDESHOW/slide${i}.webp`);
   }
 
@@ -17,17 +19,25 @@ function Home() {
     });
   }
 
-  setInterval(() => {
-    if (counter < imagesLength) {
-      sliderAnimation(counter);
-      counter++;
-    } else if (counter === imagesLength) {
-      counter = 0;
-    }
-  }, 6000);
+  useEffect(() => {
+    const slider = setInterval(() => {
+      if (counter === maxSlides) {
+        counter = 0;
+      } else {
+        sliderAnimation(counter);
+        counter++;
+      }
+    }, 6000);
+
+    return () => clearInterval(slider);
+  }, []);
 
   return (
-    <div id='home'>
+    <motion.div
+      id='home'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}>
       <Navbar />
 
       <div className='slide__container'>
@@ -43,7 +53,7 @@ function Home() {
       <p className='slide__byline'>
         residential design - commercial design - project management
       </p>
-    </div>
+    </motion.div>
   );
 }
 
