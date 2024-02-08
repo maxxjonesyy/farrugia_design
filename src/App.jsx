@@ -1,11 +1,11 @@
 import "./styles/sass/app.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Portfolio from "./pages/Portfolio";
-import About from "./pages/About";
-import News from "./pages/News";
-import Contact from "./pages/Contact";
+import Home from "./views/Home";
+import Portfolio from "./views/Portfolio";
+import About from "./views/About";
+import News from "./views/News";
+import Contact from "./views/Contact";
 
 function App() {
   return (
